@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
@@ -311,7 +311,7 @@ h6 {
 }*/
 
 .portfolio > div > div {
-  margin: 2em 0;
+  margin: 2em auto;
 }
 
 .portfolio > div > div > div:not(img){
@@ -335,6 +335,11 @@ h6 {
 
 .portfolio img{
   width: 100%
+}
+
+.portfolio p {
+  margin: 1em;
+  text-align: justify;
 }
 
 ul {
@@ -362,9 +367,9 @@ li {
   margin: 3em auto;
 }
 
-.about > div > div > div *{
+/* .about > div > div > div *{
   margin: 0;
-}
+} */
 
 .about > div > div > div {
   margin: 1em auto;
@@ -432,6 +437,23 @@ li {
 .team .container > div {
   margin: 2em 0;
 }
+
+.team button {
+  margin: 1em;
+  border-radius: 50px;
+  background-color: #ff4a4a;
+  color: white;
+  width: 20%;
+}
+
+#euro:before {
+    content: ' \20AC   ';
+}
+
+#rub:before {
+    content: ' \0420';
+}
+
 
 i{
   width: 30px;
@@ -539,6 +561,12 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
+footer img {
+  width: 50px;
+  margin: .2em;
+  max-width: 100px;
+}
+
 footer h4 {
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
@@ -551,6 +579,7 @@ footer{
   padding-bottom: 2em;
   padding-top: 1em;
 }
+
 
 footer .g-plus {
   background-image: url("../images/google.png");
