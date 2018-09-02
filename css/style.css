@@ -137,13 +137,72 @@ header {
   background-repeat: no-repeat;
   /* background-position: center right; */
   background-position: center center;
-  /* background-size: 50%; */
-  background-size: cover;
+  /* background-color: rgba(0,0,0,0.1); */
+
+  background-size: 100%;
+  /* background-size: cover; */
   background-image: linear-gradient(to right,rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
   url("../images/iMac.png");
   /* background-image:   url("../images/iMac.png"), */
   linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,1));
 }
+
+#main-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+
+  /* font-weight: bold; */
+  /* font-size: .9em; */
+}
+
+/* #main-top{
+  align-self:flex-start;
+} */
+
+#main-bottom{
+  align-self:flex-end;
+}
+
+#main-bottom div {
+    /* width: 200px;
+    height: 100px; */
+    /* background-color: #ae1c28; */
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    /* -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */ */
+    -webkit-animation: example 3s infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    /* animation-duration: 4s; */
+    animation: example 3s infinite;
+    /* padding: 10px; */
+    /* margin: 5px; */
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid #ae1c28;
+    margin: 1em;
+}
+
+/* #main-bottom div h2{
+  color: white;
+} */
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {border-color: #ae1c28;}
+    50% {border-color: #21468b;}
+    to {border-color: #ae1c28;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {border-color: #ae1c28;}
+    50% {border-color: #21468b;}
+    to {border-color: #ae1c28;}
+}
+
 
 /*body > div:not(.fixed-crossbrowser-background)  */
 main,
@@ -245,8 +304,9 @@ h4, h6 {
   font-family: 'Merriweather', serif;
   font-size: .75em;
   font-weight: 200;
-  padding: 1em 0;
-  color: #9a9a9a;
+  margin: 1em 0;
+  /* color: #9a9a9a; */
+  color: black;
 }
 
 h4 {
