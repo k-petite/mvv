@@ -139,9 +139,9 @@ header {
   background-position: center center;
   /* background-size: 50%; */
   background-size: cover;
-  /* background-image: linear-gradient(to right,rgba(0,0,0,0.3), rgba(0,0,0,0.3)), */
+  background-image: linear-gradient(to right,rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
   url("../images/iMac.png");
-  background-image:   url("../images/iMac.png"),
+  /* background-image:   url("../images/iMac.png"), */
   linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,1));
 }
 
@@ -223,9 +223,10 @@ button img {
   padding: 10px 20px;
   font-size: .9em;
   font-weight: bold;
-  background-color: #fed036;
+  background-color: #21468b;
   border-radius: 4px;
   margin: .2em;
+  color: white;
 }
 
 .welcome h5 {
@@ -259,7 +260,7 @@ h6 {
 
 
 .servicesList {
-  margin: 3em auto;
+  margin: 0 auto;
 }
 
 .servicesList div{
@@ -334,6 +335,17 @@ h6 {
 
 .portfolio img{
   width: 100%
+}
+
+ul {
+    list-style-type: square;
+    /* padding: 1em; */
+    margin: 5px 10px 5px 5px;
+}
+
+li {
+  text-align: left;
+  padding: 5px;
 }
 
 .portfolio h4,
