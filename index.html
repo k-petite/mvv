@@ -38,7 +38,7 @@
       <div id="div_background"><div></div></div>
       <div id="main-screen">
         <div id="main-top">
-          <h1 id='mvv'>MVV НА 100%</h1>
+          <h1 id='mvv'>MVV HA 100%</h1>
           <h1>Онлайн курс подготовки к экзамену MVV в посольстве Нидерландов</h1>
         </div>
         <div id='main-bottom'>
@@ -51,6 +51,7 @@
         </div>
       </div>
     </div>
+    <div id='gradient'></div>
   </header>
   <main>
     <div class='nav-links'>
@@ -475,6 +476,18 @@
       }
     });
   }
+  </script>
+  <script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("div_background").style.opacity = ".3";
+      } else {
+        document.getElementById("div_background").style.opacity = "1";
+      }
+    }
   </script>
 </body>
 </html>

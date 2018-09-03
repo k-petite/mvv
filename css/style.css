@@ -66,8 +66,8 @@ header {
   /* padding-top: .7em; */
   color: black;
   /*margin: 0;*/
-  min-height: 100vh;
-  background-color: rgb(256, 256, 256, 0.5);
+  /* min-height: 100vh; */
+  /* background-color: rgb(255, 255, 255, 0); */
 }
 
 
@@ -120,7 +120,7 @@ header {
   right: 0%;
   bottom: 0%;
   z-index: -1;
-  background-color: white;
+  /* background-color: white; */
 }
 
 #div_background > div {
@@ -141,17 +141,16 @@ header {
 
   background-size: 100%;
   /* background-size: cover; */
-  background-image: linear-gradient(to right,rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  background-image: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0)),
   url("../images/iMac.png");
   /* background-image:   url("../images/iMac.png"), */
-  linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,1));
 }
 
 #main-screen {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 85vh;
+  height: 90vh;
 
   /* font-weight: bold; */
   /* font-size: .9em; */
@@ -163,6 +162,7 @@ header {
 
 #main-bottom{
   /* align-self:flex-end; */
+  /* padding-bottom: 2em; */
 }
 
 #main-bottom div {
@@ -180,8 +180,8 @@ header {
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 30px;
-    border: 1px solid #ae1c28;
-    margin: 1em;
+    border: 5px solid #ae1c28;
+    margin: .2em;
 }
 
 /* #main-bottom div h2{
@@ -203,6 +203,10 @@ header {
     to {border-color: #ae1c28;}
 }
 
+#gradient {
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  height: 150px;
+}
 
 /*body > div:not(.fixed-crossbrowser-background)  */
 main,
@@ -234,7 +238,7 @@ button img {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2em;
   letter-spacing: 2px;
-  background-color: rgb(256, 256, 256, 0.9);
+  /* background-color: rgb(255, 255, 255, 0.9); */
 }
 
 .nav-links {
@@ -258,22 +262,22 @@ button img {
 
 .container {
   width: 90%;
-  margin: 1.5em auto;
+  margin: 0 auto;
 }
 
 .welcome {
-  margin: 2.5em auto;
+  margin: 0 auto;
 }
 
 .welcome h1{
-  margin: .5em auto 0;
-  font-size: 1.2em;
+  margin: .7em auto 0;
+  font-size: 1.1em;
 }
 
 #mvv {
   font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Karla', sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -287,7 +291,7 @@ button img {
 
 .welcome a{
   padding: 10px 20px;
-  font-size: .9em;
+  font-size: 1.2em;
   font-weight: bold;
   background-color: #21468b;
   border-radius: 4px;
@@ -296,8 +300,8 @@ button img {
 }
 
 .welcome h5 {
-  padding: 30px 0;
-  margin: 0 auto;
+  padding: 5px 0;
+  margin: 1em auto;
 }
 
 h3 {
@@ -311,7 +315,7 @@ h4, h6 {
   font-family: 'Merriweather', serif;
   font-size: .75em;
   font-weight: 200;
-  margin: 1em 0;
+  margin: .5em 0;
   /* color: #9a9a9a; */
   color: black;
 }
