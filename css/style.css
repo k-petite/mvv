@@ -626,7 +626,11 @@ button {
   margin: 0 auto;
   background-color: #fed036;
   border-style: none;
+<<<<<<< HEAD
   /* border-radius: 5px; */
+=======
+  /*border-radius: 5px;*/
+>>>>>>> origin/master
   color: white;
   font-size: .9em;
   font-family: 'Montserrat', sans-serif;
