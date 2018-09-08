@@ -2,19 +2,13 @@
   box-sizing: border-box;
   /* border: 1px solid red; */
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Roboto', sans-serif;
 }
 
-/*body, html {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-}*/
+body{
+    margin: 0;
+}
 
 /* =================================
                 Clearfix
@@ -71,8 +65,8 @@ header {
 }
 
 
-/*Collapsable button*/
-.collapsible {
+/*Collapsable buttom at the top menu*/
+.collapsible-menu {
   background-color: white;
   color: black;
   cursor: pointer;
@@ -85,11 +79,11 @@ header {
   height: auto;
 }
 
-.active, .collapsible:hover {
+.active-menu, .collapsible-menu:hover {
   background-color: white;
 }
 
-.collapsible:after {
+.collapsible-menu:after {
   content: '\2795';
   color: black;
   font-weight: bold;
@@ -97,17 +91,51 @@ header {
   margin: .7em;
 }
 
-.active:after {
+.active-menu:after {
   content: "\2796";
 }
 
-.content {
+.content-menu {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #fff;
-} /*Collapsable button end*/
+} /*Collapsable top-menu button end*/
+
+/*Collapsable more buttom at the top menu*/
+.collapsible-more {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 1em;
+  height: auto;
+}
+
+.active-more, .collapsible-more:hover {
+  background-color: white;
+}
+
+.collapsible-more:after {
+  color: black;
+  font-weight: bold;
+  /* float: right; */
+  margin: .7em;
+}
+
+
+.content-more {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fff;
+} /*Collapsable more button end*/
 
 
 #div_background{
@@ -244,6 +272,7 @@ footer{
 
 main {
   padding-top: 2em;
+  font-weight:300;
 }
 
 .navigation {
@@ -374,12 +403,12 @@ h6 {
   margin: 0 auto;
 }
 
-.servicesList div{
+.servicesList div div{
   margin: 3em 0;
   padding: 10px;
 }
 
-.servicesList div div {
+.servicesList div div div{
   border-radius: 50%;
   border: 2.5px solid #ffd137;
   height: 58px;
@@ -456,13 +485,27 @@ h6 {
 ul {
     list-style-type: square;
     /* padding: 1em; */
-    margin: 5px 10px 5px 5px;
+    margin: 15px 10px;
 }
 
 li {
   text-align: left;
   padding: 5px;
 }
+
+.portfolio-list div div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.portfolio-list div div img {
+  /* flex: 50%;
+  max-width: 10em; */
+  max-height: 10em;
+  padding: 0 4px;
+}
+
 
 .portfolio h4,
 .portfolio h5 {
@@ -473,6 +516,30 @@ li {
 .about {
   padding-top: 3.5em;
 }
+
+.cross {
+  -webkit-animation-name: cross; /* Safari 4.0 - 8.0 */
+  /* -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */ */
+  -webkit-animation: cross 1s ; /* Safari 4.0 - 8.0 */
+  animation-name: cross;
+  /* animation-duration: 4s; */
+  animation: cross 1s ;
+}
+
+/*---Makes size of button text blinks---*/
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes cross {
+  from { transform: rotate(0deg); }
+  to {transform: rotate(45deg); }
+}
+
+/* Standard syntax */
+@keyframes cross {
+  from { transform: rotate(0deg); }
+  to {transform: rotate(45deg); }
+}
+
 
 .about > div > div {
   margin: 3em auto;
@@ -493,6 +560,7 @@ li {
   height: 150px;
   /*width: 60%;*/
 }
+
 
 .about > div > div > div > h5{
   padding: .5em;
