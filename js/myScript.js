@@ -97,6 +97,21 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
+var coll = document.getElementsByClassName("collapsible-rows-div5");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active-rows-div5");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
   function cross(x) {
       x.classList.toggle("change");
   }
