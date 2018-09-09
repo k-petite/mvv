@@ -664,7 +664,7 @@ li {
 .content-rows-div3,
 .content-rows-div4,
 .content-rows-div5{
-  padding: 0 18px;
+  padding: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -672,7 +672,8 @@ li {
 } /*Collapsable more button end*/
 
 .about p {
-  margin: 0;
+  margin: 0 auto;
+  width: 90%
 }
 
 .about img{
