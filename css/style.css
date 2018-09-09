@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   text-align: center;
   /* font-family: 'Montserrat', sans-serif; */
   font-family: 'Roboto', sans-serif;
@@ -493,19 +493,12 @@ li {
   padding: 5px;
 }
 
-.portfolio-list div div {
+#summary-images {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  align-content:stretch;
 }
-
-.portfolio-list div div img {
-  /* flex: 50%;
-  max-width: 10em; */
-  max-height: 10em;
-  padding: 0 4px;
-}
-
 
 .portfolio h4,
 .portfolio h5 {
@@ -516,6 +509,71 @@ li {
 .about {
   padding-top: 3.5em;
 }
+
+#summary-images div:nth-child(1){
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 10em;
+  background-image: url("../images/tablet.jpg");
+
+  background-position: center center;
+
+  background-size: contain;
+  /* background-size: cover; */
+}
+
+#summary-images div:nth-child(2){
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 10em;
+  margin-left: 5px;
+
+  background-image: url("../images/iPhone.jpg");
+
+  background-position: center center;
+
+  background-size: contain;
+  /* background-size: cover; */
+}
+
+#div2_background{
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  background-color: black;
+}
+
+#div2_background > div {
+  top: 0px;
+  left: 0px;
+  width: auto;
+  height: auto;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  background-repeat: no-repeat;
+  /* background-position: center right; */
+  background-position: center center;
+  /* background-color: rgba(0,0,0,0.1); */
+
+  background-size: 80%;
+  /* background-size: cover; */
+  background-image: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0)),
+  url("../images/iMac.png");
+  /* background-image:   url("../images/iMac.png"), */
+}
+
 
 .cross {
   -webkit-animation-name: cross; /* Safari 4.0 - 8.0 */
@@ -876,14 +934,14 @@ footer i {
     margin: 1em auto;
   }
 
-  .portfolio-list {
+  .course-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 
-  .portfolio-list > div {
+  .course-content > div {
     margin: 10px;
     max-width: 25%;
   }
