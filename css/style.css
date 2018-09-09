@@ -1014,6 +1014,7 @@ footer i {
   .about-list {
     display: flex;
     flex-direction: column;
+    width: 95%;
   }
 
   .about-list{
