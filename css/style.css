@@ -25,7 +25,7 @@ body{
 
 .services,
 .about,
-.team,
+.payment,
 .contacts {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -130,7 +130,8 @@ header {
 
 
 .content-more {
-  padding: 0 18px;
+  /* padding: 0 18px; */
+  padding: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -404,21 +405,21 @@ h6 {
 }
 
 .servicesList div div{
-  margin: 3em 0;
-  padding: 10px;
+  margin: 1em 0 0;
+  padding: 10px 0 0;
 }
 
 .servicesList div div div{
-  border-radius: 50%;
-  border: 2.5px solid #ffd137;
-  height: 58px;
-  width: 58px;
+  /* border-radius: 50%; */
+  /* border: 2.5px solid #ffd137; */
+  /* height: 58px;
+  width: 58px; */
   margin: 0 auto;
 }
 
 .servicesList img{
   margin: 0.1em auto;
-  max-width: 100%;
+  max-width: 3em;
   /*height: 55%;*/
 }
 
@@ -426,22 +427,28 @@ h6 {
   height: 90%;
 }
 
+
+#flag-logo{
+  max-width: 4em;
+}
+
 .servicesList h5{
-  margin: 1.5em 0 0;
+  margin: 0 0 1.5em;
 }
 
 .servicesList h6{
   margin: 0;
+  text-align: justify;
 }
 
 .portfolio {
   background-color: #f7f7f7;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 4em;
+  /* padding-bottom: 2em; */
 }
 
 .portfolio > div {
-  margin: 1em auto;
+  margin: 2em auto 0;
   width: 100%;
 }
 
@@ -538,6 +545,10 @@ li {
   /* background-size: cover; */
 }
 
+.adds {
+    list-style-image: url('../images/nastya.png');
+}
+
 #div2_background{
   display: inline-block;
   position: fixed;
@@ -594,7 +605,7 @@ li {
     width: 23px;
     height: 1px;
     background-color: #333;
-    transition: 0.4s;
+    transition: 0.5s;
     margin: -1px;
 }
 .bar1 {
@@ -689,6 +700,19 @@ li {
   padding: .5em;
 }
 
+.about-list {
+  padding: 2em 0;
+}
+
+
+
+.review{
+  margin-top: 2em;
+}
+
+.review i {
+  color: #2278c5;
+}
 
 #story {
   border: 6px solid #f2f0f6;
@@ -710,7 +734,7 @@ li {
   font-weight: 500;
 }
 
-.team {
+.payment {
   background-color: #f7f7f7;
 }
 
@@ -726,26 +750,27 @@ li {
   height: 200px;
 }
 
-.team h4,
-.team h5 {
+.payment h4,
+.payment h5 {
   margin: 0 auto;
 }
 
 
-.team h5 {
+.payment h5 {
   padding-top: 20px;
 }
 
-.team .container > div {
+.payment .container > div {
   margin: 2em 0;
 }
 
-.team button {
+.payment button {
   margin: 1em;
   border-radius: 50px;
-  background-color: #ff4a4a;
+  background-color: #21468b;
   color: white;
-  width: 20%;
+  width: 3em;
+  height: 3em;
 }
 
 #euro:before {
@@ -758,10 +783,7 @@ li {
 
 
 i{
-  width: 30px;
-  height: 30px;
   padding: 4px;
-  border: 2px solid #222;
   border-radius: 50%;
   color: #222;
 }
@@ -815,6 +837,34 @@ form > div {
   margin-bottom: 2em;
 }
 
+.payment {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #d3d3d3;
+  font-size: .6em;
+}
+
+.package {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../images/package.jpg");
+  background-position: left center;
+  background-size: contain;
+  width: 50%;
+}
+
+.payment-text {
+  width: 50%;
+}
+
+.price {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+
+
 .contacts h4 {
   margin: 0 auto 2em;
 }
@@ -854,36 +904,30 @@ textarea::-webkit-input-placeholder{
 button {
   height: 3em;
   width: 60%;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   background-color: #fed036;
   border-style: none;
-<<<<<<< HEAD
-  /* border-radius: 5px; */
-=======
-  /*border-radius: 5px;*/
->>>>>>> origin/master
   color: white;
-  font-size: .9em;
+  font-size: 1.5em;
   font-family: 'Montserrat', sans-serif;
 }
 
 footer img {
-  width: 50px;
+  width: 100px;
   margin: .2em;
   max-width: 100px;
 }
 
-footer h4 {
-  font-style: normal;
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  font-weight: 300;
-  margin: 0;
+footer p {
+  font-weight: 500;
+  margin: 2em;
+  font-size: 12px;
 }
 
 footer{
   padding-bottom: 2em;
-  padding-top: 1em;
+  padding-top: 2em;
+  background-color: #f0eded;
 }
 
 
@@ -892,11 +936,14 @@ footer .g-plus {
   background-color: #222;
 }
 
+
 footer i {
   color: white;
   background-color: #222;
+  border: 2px solid #222;
+  width: 30px;
+  height: 30px;
 }
-
 
 @media (min-width: 768px) {
 
@@ -994,6 +1041,10 @@ footer i {
     margin-top: 0;
     margin-bottom: 2em;
   }
+/*
+  #services {
+    background-color: #f0eded;
+  } */
 
   #portfolio .container{
     margin: 1em auto;
@@ -1121,7 +1172,7 @@ footer i {
   }
 
   .black-circle h4,
-  .team h4:last-child{
+  .payment h4:last-child{
     font-style: normal;
     font-size: .7em;
   }
