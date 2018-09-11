@@ -23,12 +23,12 @@ body{
 .cf:after {
   clear: both; }
 
-.services,
+.about,
 .about,
 .payment,
 .contacts {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: .5em;
+  /* padding-bottom: 2em; */
 }
 
 
@@ -280,7 +280,6 @@ main {
   margin: 1em 0;
 }
 
-
 button img {
   width: 50px;
   margin: .2em;
@@ -308,6 +307,9 @@ button img {
   padding-top: 1em;
 }
 
+.bottom-nav {
+  display: none;
+}
 
 .language {
   display: flex;
@@ -375,9 +377,9 @@ header p {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 500;
-  margin: 0;
+  margin: 1em 0;
 }
 
 h4, h6 {
@@ -399,6 +401,9 @@ h6 {
   line-height: 1.7em;
 }
 
+#content {
+  padding-top: 1em;
+}
 
 .servicesList {
   margin: 0 auto;
@@ -441,50 +446,50 @@ h6 {
   text-align: justify;
 }
 
-.portfolio {
+.author {
   background-color: #f7f7f7;
-  padding-top: 4em;
+  /* padding-top: 4em; */
   /* padding-bottom: 2em; */
 }
 
-.portfolio > div {
+.author > div {
   margin: 2em auto 0;
   width: 100%;
 }
 
-/*.portfolio h3,
-.portfolio h4{
+/*.author h3,
+.author h4{
   margin: 1em 0;
 }*/
 
-/* .portfolio > div > div {
+/* .author > div > div {
   margin: 2em auto;
 } */
 /*
-.portfolio > div > div > div:not(img){
+.author > div > div > div:not(img){
   background-color: #fefefe;
   padding: 0;
 } */
 
-.portfolio > div > div > div > h5{
+.author > div > div > div > h5{
   padding-top: 1.5em;
 }
 
-.portfolio > div > div > div > h4{
+.author > div > div > div > h4{
   padding-bottom: 1.5em;
   font-family: 'PT Serif', serif;
   font-size: 0.8em;
 }
 
-/* .portfolio .container > div > div {
+/* .author .container > div > div {
   margin-bottom: 2em;
 } */
 
-.portfolio img{
+.author img{
   width: 100%
 }
 
-.portfolio p {
+.author p {
   margin: 1em;
   text-align: justify;
 }
@@ -507,14 +512,14 @@ li {
   align-content:stretch;
 }
 
-.portfolio h4,
-.portfolio h5 {
+.author h4,
+.author h5 {
   padding: 5px 0;
   margin: 0;
 }
 
 .about {
-  padding-top: 3.5em;
+  margin-top: 3.5em;
 }
 
 #summary-images div:nth-child(1){
@@ -737,6 +742,7 @@ li {
 .payment {
   background-color: #f7f7f7;
 }
+
 
 .black-circle > div {
   padding-bottom: 3em;
@@ -1037,16 +1043,16 @@ footer i {
     margin: 0;
   }
 
-  .services .container > h4{
+  .about .container > h4{
     margin-top: 0;
     margin-bottom: 2em;
   }
 /*
-  #services {
+  #about {
     background-color: #f0eded;
   } */
 
-  #portfolio .container{
+  #author .container{
     margin: 1em auto;
   }
 
