@@ -24,13 +24,11 @@ body{
   clear: both; }
 
 .about,
-.about,
 .payment,
 .contacts {
   padding-top: .5em;
   /* padding-bottom: 2em; */
 }
-
 
 a {
   color: black;
@@ -197,7 +195,7 @@ header {
   background-image: linear-gradient(to bottom, rgba(255,255,255,0),
   rgba(255,255,255,0.9) 15%,
   rgba(255,255,255,1));
-  /* padding-bottom: 3em; */
+  padding-bottom: 50px;
 }
 
 #main-bottom div {
