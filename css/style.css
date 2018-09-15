@@ -43,7 +43,7 @@ h2 {
   letter-spacing: 1px;
   text-align: center;
   margin: 0 auto;
-  padding: 5px;
+  padding: 10px 5px;
 }
 
 h3 {
@@ -221,7 +221,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
+  height: 95vh;
 }
 
 #welcome-top{
@@ -269,11 +269,13 @@ p {
   color: white;
 }
 
+.welcome h2{
+  padding: 0;
+}
 .welcome p {
   justify-content: center;
-  margin-bottom: 1em;
-  margin-top: 3em;
-  /* margin-bottom: 2em; */
+  padding-top: 1em;
+  padding-bottom: 2em;
   color: #24334f8c;
 }
 
