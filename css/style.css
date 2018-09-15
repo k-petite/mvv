@@ -60,7 +60,7 @@ h3 {
 
 h4 {
   font-weight: bold;
-  font-size: .9em;
+  font-size: 1em;
   color: black;
   line-height: 1.7em;
   margin: 0 auto;
@@ -106,12 +106,6 @@ p {
   /* =================================================
                         HEADER
   ================================================== */
-
-header p {
-  margin-top: 4em;
-  margin-bottom: 2em;
-  color: #24334f8c;
-}
 
 /* =========   Collapsable top menu   ========= */
 
@@ -227,7 +221,7 @@ header p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 85vh;
+  height: 90vh;
 }
 
 #welcome-top{
@@ -277,6 +271,10 @@ header p {
 
 .welcome p {
   justify-content: center;
+  margin-bottom: 1em;
+  margin-top: 3em;
+  /* margin-bottom: 2em; */
+  color: #24334f8c;
 }
 
 strong {
@@ -843,7 +841,7 @@ footer i {
     background-size: 50%;
     /* background-size: cover; */
     /* background-image: linear-gradient(to right,rgba(0,0,0,0.5), rgba(0,0,0,0.5)), */
-    url("../images/iMac.png");
+    /* url("../images/iMac.png"); */
   }
 
   .top-nav img{
@@ -865,6 +863,7 @@ footer i {
     margin: 1em 15em;
     flex-grow: 3;
   }
+
   .language{
     justify-content: center;
     flex-grow: 1;
@@ -1068,7 +1067,6 @@ footer i {
   }
 
   header {
-    background:
     color: white;
     margin: 0;
     /*padding-bottom: .5em;*/
