@@ -1,33 +1,18 @@
+/* =================================================
+                      General
+================================================== */
+
 * {
   box-sizing: border-box;
   /* border: 1px solid red; */
   text-align: center;
   /* font-family: 'Montserrat', sans-serif; */
   font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
 body{
     margin: 0;
-}
-
-/* =================================
-                Clearfix
-==================================== */
-.cf:before,
-.cf:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.cf:after {
-  clear: both; }
-
-.about,
-.payment,
-.contacts {
-  padding-top: .5em;
-  /* padding-bottom: 2em; */
 }
 
 a {
@@ -40,30 +25,101 @@ a:hover {
 }
 
 header h5 a:hover {
-  color: white;
-}
-
 a:visited {
   color: black;
 }
 
-/*header {
-  background: linear-gradient(to right,rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0.9)),
-  url("../images/container_11.png") repeat center, black;
-  color: white;
-  margin: 0;
-}*/
-
-header {
-  /* padding-top: .7em; */
-  color: black;
-  /*margin: 0;*/
-  /* min-height: 100vh; */
-  /* background-color: rgb(255, 255, 255, 0); */
+h1{
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 5px;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+}
 
-/*Collapsable buttom at the top menu*/
+h3 {
+  font-family: 'PT Serif', serif;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  line-height: 1.5em;
+  font-size: .75em;
+  font-weight: 200;
+  color: #000000a6;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: .9em;
+  color: black;
+  line-height: 1.7em;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1em;
+  color: black;
+  line-height: 1.7em;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+p {
+  font-weight: 200;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container p,
+.container li {
+  text-align: justify;
+}
+
+/* =================================================
+                      Clearfix
+================================================== */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }   /* Clearfix end */
+
+  /* =================================================
+                        HEADER
+  ================================================== */
+
+header p {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  color: #24334f8c;
+/* =========   Collapsable top menu   ========= */
+
+.main-logo {
+  width: 50px;
+  margin: .2em;
+  max-width: 100px;
+}
+
 .collapsible-menu {
   background-color: white;
   color: black;
@@ -93,15 +149,178 @@ header {
   content: "\2796";
 }
 
-.content-menu {
+.collapsible-content-menu {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #fff;
-} /*Collapsable top-menu button end*/
+}
 
-/*Collapsable more buttom at the top menu*/
+.language {
+  display: flex;
+  flex-direction: row;
+  font-size: .9em;
+  justify-content: space-around;
+}
+
+.language a{
+  padding: 5px 10px;
+}
+
+.top-nav,
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  order: 1;
+  padding: 1em 0 2em;
+}
+
+.nav-links * {
+  padding: 0.9em 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+} /* Collapsable top menu */
+
+
+/* =========   Welcome sticky background   ========= */
+
+#div_background{
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+}
+
+#div_background > div {
+  top: 0px;
+  left: 0px;
+  width: auto;
+  height: auto;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%;
+  background-image: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0)),
+  url("../images/iMac.png");
+}/* Welcome sticked background end */
+
+/* =========   Welcome page content   ========= */
+
+#welcome-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+}
+
+#welcome-top{
+  background-image: linear-gradient(to bottom, rgba(255,255,255,1),
+  rgba(255,255,255,0.9) 90%,
+  rgba(255,255,255,0));
+  padding-bottom: 1em;
+}
+
+#welcome-bottom{
+  padding-top: 1em;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0),
+  rgba(255,255,255,0.9) 15%,
+  rgba(255,255,255,1));
+}
+
+}
+
+#welcome-bottom div {
+  width: 90%;
+  margin: .2em auto 1em;
+}
+
+#welcome-bottom a {
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation: example 3s infinite; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation: example 3s infinite;
+  border-radius: 30px;
+  border: 5px solid #ae1c28;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: .2em;
+}
+
+.welcome {
+  margin: 0 auto;
+}
+
+.welcome a{
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: #21468b;
+  border-radius: 4px;
+  margin: .2em;
+  color: white;
+}
+
+.welcome p {
+  justify-content: center;
+}
+
+strong {
+  font-weight: bold;
+}
+.bottom-nav {
+  display: none;
+}
+
+/*   Makes size of button text grow   */
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {font-weight: 700; }
+  50% {font-weight: 200;}
+  to {font-weight: 700;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {font-weight: 700; }
+  50% {font-weight: 200;}
+  to {font-weight: 700;}
+}/*Welcome page content end*/
+
+/* =================================================
+                      MAIN
+================================================== */
+
+main{
+  background-color: white;
+  padding-top: 2em;
+  font-weight:300;
+}
+
+
+
+#content {
+  padding-top: 1em;
+}
+
+
+/* =========   Collapsable Learn more button at MVV section   ========= */
+
 .collapsible-more {
   background-color: white;
   color: black;
@@ -122,308 +341,33 @@ header {
 .collapsible-more:after {
   color: black;
   font-weight: bold;
-  /* float: right; */
   margin: .7em;
 }
 
-
 .content-more {
-  /* padding: 0 18px; */
   padding: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #fff;
-} /*Collapsable more button end*/
+} /* Collapsable Learn more button at MVV section */
 
-
-#div_background{
-  display: inline-block;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
-  width: 100%;
-  right: 0%;
-  bottom: 0%;
-  z-index: -1;
-  /* background-color: white; */
-}
-
-#div_background > div {
-  top: 0px;
-  left: 0px;
-  width: auto;
-  height: auto;
-  right: 0px;
-  bottom: 0px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-  background-repeat: no-repeat;
-  /* background-position: center right; */
-  background-position: center center;
-  /* background-color: rgba(0,0,0,0.1); */
-
-  background-size: 80%;
-  /* background-size: cover; */
-  background-image: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0)),
-  url("../images/iMac.png");
-  /* background-image:   url("../images/iMac.png"), */
-}
-
-#main-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 85vh;
-
-  /* font-weight: bold; */
-  /* font-size: .9em; */
-}
-
-#main-top{
-  background-image: linear-gradient(to bottom, rgba(255,255,255,1),
-  rgba(255,255,255,0.9) 90%,
-  rgba(255,255,255,0));
-  padding-bottom: 1em;
-}
-
-#main-bottom{
-  padding-top: 1em;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0),
-  rgba(255,255,255,0.9) 15%,
-  rgba(255,255,255,1));
-  /* padding-bottom: 50px; */
-}
-
-#main-bottom div {
-    /* width: 200px;
-    height: 100px; */
-    /* background-color: #ae1c28; */
-    width: 90%;
-    margin: .2em auto 1em;
-}
-
-#main-bottom h4 {
-  line-height: 1.5em;
-}
-
-#main-bottom a {
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  /* -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */ */
-  -webkit-animation: example 3s infinite; /* Safari 4.0 - 8.0 */
-  animation-name: example;
-  /* animation-duration: 4s; */
-  animation: example 3s infinite;
-  /* padding: 10px; */
-  /* margin: 5px; */
-  border-radius: 30px;
-  border: 5px solid #ae1c28;
-  font-size: 1.2em;
-  font-weight: bold;
-  letter-spacing: .2em;
-}
-
-
-/*---Makes frame aound button blinks---*/
-
-/* Safari 4.0 - 8.0 */
-/* @-webkit-keyframes example {
-    from {border-color: #ae1c28;}
-    50% {border-color: #21468b;}
-    to {border-color: #ae1c28;}
-} */
-
-/* Standard syntax */
-/* @keyframes example {
-    from {border-color: #ae1c28;}
-    50% {border-color: #21468b;}
-    to {border-color: #ae1c28;}
-} */
-
-/*---Makes size of button text blinks---*/
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-  from {font-weight: 700; }
-  50% {font-weight: 200;}
-  to {font-weight: 700;}
-}
-
-/* Standard syntax */
-@keyframes example {
-  from {font-weight: 700; }
-  50% {font-weight: 200;}
-  to {font-weight: 700;}
-}
-
-
-
-
-
-/*body > div:not(.fixed-crossbrowser-background)  */
-main,
-footer{
-  background-color: white;
-}
-
-main {
-  padding-top: 2em;
-  font-weight:300;
-}
-
-.navigation {
-  margin: 1em 0;
-}
-
-button img {
-  width: 50px;
-  margin: .2em;
-  max-width: 100px;
-}
-
-.navigation,
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  /* font-weight: bold; */
-  font-size: .9em;
-}
-
-.nav-links * {
-  padding: 0.9em 0;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.2em;
-  letter-spacing: 2px;
-  /* background-color: rgb(255, 255, 255, 0.9); */
-}
-
-.nav-links {
-  order: 1;
-  padding-top: 1em;
-}
-
-.bottom-nav {
-  display: none;
-}
-
-.language {
-  display: flex;
-  flex-direction: row;
-  /* font-weight: bold; */
-  font-size: .9em;
-  justify-content: space-around;
-  /* width: 20%; */
-  /* align-items: flex-end; */
-}
-
-.language a{
-  padding: 5px 10px;
-}
-
-.container {
-  width: 90%;
+.contentList {
   margin: 0 auto;
 }
 
-.welcome {
-  margin: 0 auto;
-}
-
-.welcome h1{
-  margin: .7em auto 0;
-  font-size: 1.1em;
-}
-
-#mvv {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-family: 'Karla', sans-serif;
-  font-size: 2em;
-  font-weight: bold;
-  margin-top: 0;
-}
-
-.welcome h2 {
-  font-family: 'PT Serif', serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 1.3em;
-  margin: .2em auto;
-}
-
-.welcome a{
-  padding: 10px 20px;
-  font-size: 1.2em;
-  font-weight: 700;
-  background-color: #21468b;
-  border-radius: 4px;
-  margin: .2em;
-  color: white;
-}
-
-.welcome h5 {
-  padding: 5px 0;
-  margin: 2em auto;
-}
-
-header p {
-  margin-top: 4em;
-  margin-bottom: 2em;
-  color: #24334f8c;
-}
-
-h3 {
-  font-size: 1.5em;
-  font-weight: 500;
-  margin: 1em 0;
-}
-
-h4, h6 {
-  font-family: 'PT Serif', serif;
-  font-family: 'Merriweather', serif;
-  font-size: .75em;
-  font-weight: 200;
-  margin: .5em 0;
-  /* color: #9a9a9a; */
-  color: black;
-}
-
-h4 {
-  font-style: italic;
-}
-
-h6 {
-  font-size: .7em;
-  line-height: 1.7em;
-}
-
-#content {
-  padding-top: 1em;
-}
-
-.servicesList {
-  margin: 0 auto;
-}
-
-.servicesList div div{
+.contentList div div{
   margin: 1em 0 0;
   padding: 10px 0 0;
 }
 
-.servicesList div div div{
-  /* border-radius: 50%; */
-  /* border: 2.5px solid #ffd137; */
-  /* height: 58px;
-  width: 58px; */
+.contentList div div div{
   margin: 0 auto;
 }
 
-.servicesList img{
+.contentList img{
   margin: 0.1em auto;
   max-width: 3em;
-  /*height: 55%;*/
 }
 
 #lock-logo {
@@ -435,19 +379,8 @@ h6 {
   max-width: 4em;
 }
 
-.servicesList h5{
-  margin: 0 0 1.5em;
-}
-
-.servicesList h6{
-  margin: 0;
-  text-align: justify;
-}
-
 .author {
   background-color: #f7f7f7;
-  /* padding-top: 4em; */
-  /* padding-bottom: 2em; */
 }
 
 .author > div {
@@ -455,41 +388,12 @@ h6 {
   width: 100%;
 }
 
-/*.author h3,
-.author h4{
-  margin: 1em 0;
-}*/
-
-/* .author > div > div {
-  margin: 2em auto;
-} */
-/*
-.author > div > div > div:not(img){
-  background-color: #fefefe;
-  padding: 0;
-} */
-
-.author > div > div > div > h5{
-  padding-top: 1.5em;
-}
-
-.author > div > div > div > h4{
-  padding-bottom: 1.5em;
-  font-family: 'PT Serif', serif;
-  font-size: 0.8em;
-}
-
-/* .author .container > div > div {
-  margin-bottom: 2em;
-} */
-
 .author img{
   width: 100%
 }
 
 .author p {
   margin: 1em;
-  text-align: justify;
 }
 
 ul {
@@ -499,7 +403,6 @@ ul {
 }
 
 li {
-  text-align: left;
   padding: 5px;
 }
 
@@ -510,14 +413,9 @@ li {
   align-content:stretch;
 }
 
-.author h4,
-.author h5 {
-  padding: 5px 0;
-  margin: 0;
-}
-
 .about {
   margin-top: 3.5em;
+  padding-top: .5em;
 }
 
 #summary-images div:nth-child(1){
@@ -526,11 +424,8 @@ li {
   width: 60%;
   height: 10em;
   background-image: url("../images/tablet.jpg");
-
   background-position: center center;
-
   background-size: contain;
-  /* background-size: cover; */
 }
 
 #summary-images div:nth-child(2){
@@ -539,13 +434,9 @@ li {
   width: 40%;
   height: 10em;
   margin-left: 5px;
-
   background-image: url("../images/iPhone.jpg");
-
   background-position: center center;
-
   background-size: contain;
-  /* background-size: cover; */
 }
 
 .adds {
@@ -577,15 +468,10 @@ li {
   margin-right: auto;
   display: inline-block;
   background-repeat: no-repeat;
-  /* background-position: center right; */
   background-position: center center;
-  /* background-color: rgba(0,0,0,0.1); */
-
   background-size: 80%;
-  /* background-size: cover; */
   background-image: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0)),
   url("../images/iMac.png");
-  /* background-image:   url("../images/iMac.png"), */
 }
 
 .collapsable-rows{
@@ -698,11 +584,6 @@ li {
   /*width: 60%;*/
 }
 
-
-.about > div > div > div > h5{
-  padding: .5em;
-}
-
 .about-list {
   padding: 2em 0;
 }
@@ -727,19 +608,10 @@ li {
   margin: 0 auto;
 }
 
-#story h5{
-  max-width: 100%;
-  height: 50%;
-  margin: 2.3em;
-  line-height: 1.5em;
-  color: white;
-  text-shadow: -2px 2px 2px #febf21;
-  font-weight: 500;
-}
-
 .payment {
   background-color: #f7f7f7;
 }
+
 
 
 .black-circle > div {
@@ -752,16 +624,6 @@ li {
   margin: 0 auto;
   width: 200px;
   height: 200px;
-}
-
-.payment h4,
-.payment h5 {
-  margin: 0 auto;
-}
-
-
-.payment h5 {
-  padding-top: 20px;
 }
 
 .payment .container > div {
@@ -867,12 +729,6 @@ form > div {
   line-height: 2em;
 }
 
-
-
-.contacts h4 {
-  margin: 0 auto 2em;
-}
-
 input, textarea {
   margin: 1em auto;
   width: 100%;
@@ -928,13 +784,6 @@ footer p {
   font-size: 12px;
 }
 
-footer{
-  padding-bottom: 2em;
-  padding-top: 2em;
-  background-color: #f0eded;
-}
-
-
 footer .g-plus {
   background-image: url("../images/google.png");
   background-color: #222;
@@ -976,11 +825,9 @@ footer i {
     url("../images/iMac.png");
   }
 
-  .navigation img{
     max-height: 60px;
   }
 
-  .navigation {
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -1014,41 +861,19 @@ footer i {
     margin: 2em auto 2em;
   }
 
-  .welcome > div h1 {
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    margin: 0;
-  }
-
-  .welcome > div h2 {
-    font-size: .7em;
-    letter-spacing: 2px;
-  }
-
   .welcome a {
     font-size: 1.2em;
     font-weight: 500;
     padding: 20px 55px
   }
 
-  .servicesList {
     display: flex;
     flex-direction: row;
     margin: 0;
   }
 
-  .servicesList > div{
     margin: 0;
   }
-
-  .about .container > h4{
-    margin-top: 0;
-    margin-bottom: 2em;
-  }
-/*
-  #about {
-    background-color: #f0eded;
-  } */
 
   #author .container{
     margin: 1em auto;
@@ -1144,41 +969,18 @@ footer i {
     width: 35%;
   }
 
-  .about-list > div:not(.v-line) > div > h5{
-    padding-top: 0;
-    padding-right: 0;
-  }
-
-  .about-list > div:not(.v-line) > div > h6{
-    padding-bottom: 0;
-  }
-
   .about-list{
     width: 800px;
     margin: 0 auto;
-  }
-
-  .about-list h6 {
-    font-size: .65em;
   }
 
   #story {
     margin: 2em auto;
   }
 
-  #story h5{
-    width: 75px;
-  }
-
   .black-circle {
     display: flex;
     justify-content: space-around;
-  }
-
-  .black-circle h4,
-  .payment h4:last-child{
-    font-style: normal;
-    font-size: .7em;
   }
 
   .logos {
@@ -1243,7 +1045,6 @@ footer i {
     /*padding-bottom: .5em;*/
   }
 
-  .navigation {
     flex-direction: row;
   }
 
@@ -1253,20 +1054,6 @@ footer i {
 
   .welcome > div {
     margin-top: 5em;
-  }
-
-
-  .welcome > div h1 {
-    font-size: 1.2em;
-    letter-spacing: 2px;
-    margin: 0;
-    text-align: left;
-  }
-
-  .welcome > div h2 {
-    font-size: .7em;
-    letter-spacing: 2px;
-    text-align: left;
   }
 
 }
