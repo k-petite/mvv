@@ -154,7 +154,6 @@ p {
 
 .language {
   display: flex;
-  flex-direction: row;
   font-size: .9em;
   justify-content: space-around;
 }
@@ -169,8 +168,12 @@ p {
   flex-direction: column;
 }
 
+.top-nav{
+  padding-bottom: 2em;
+}
+
 .nav-links {
-  order: 1;
+  /* order: 1; */
   padding: 1em 0 2em;
 }
 
@@ -755,7 +758,6 @@ footer i {
 
   .nav-links {
     justify-content: space-around;
-    margin: 1em 15em;
     flex-grow: 3;
   }
 
@@ -763,6 +765,7 @@ footer i {
     justify-content: center;
     flex-grow: 1;
     margin: 1em 1em;
+    padding: 1em 0 2em;
   }
 
   .nav-links a,
@@ -792,6 +795,34 @@ footer i {
 
   .contentList > div{
     margin: 0;
+  }
+
+  #summary-images {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content:stretch;
+  }
+
+  #summary-images div:nth-child(1){
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 10em;
+    background-image: url("../images/tablet.jpg");
+    background-position: center center;
+    background-size: contain;
+  }
+
+  #summary-images div:nth-child(2){
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 10em;
+    margin-left: 5px;
+    background-image: url("../images/iPhone.jpg");
+    background-position: center center;
+    background-size: contain;
   }
 
   #author .container{
