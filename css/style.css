@@ -58,16 +58,7 @@ h3 {
   padding: 5px;
 }
 
-h4 {
-  font-weight: bold;
-  font-size: 1em;
-  color: black;
-  line-height: 1.7em;
-  margin: 0 auto;
-  padding: 5px;
-}
-
-h5 {
+h4, h5 {
   font-weight: bold;
   font-size: 1em;
   color: black;
@@ -210,12 +201,9 @@ p {
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 80%;
-  background-image: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0)),
-  url("../images/iMac.png");
-}/* Welcome sticked background end */
+  background: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0)),
+  url("../images/iMac.png") center center/80% no-repeat
+  }/* Welcome sticked background end */
 
 
 /* =========   Welcome page content   ========= */
@@ -382,23 +370,13 @@ main{
   width: 100%;
 }
 
-.author img{
-  width: 100%
-}
-
 .author p {
   margin: 1em;
 }
 
   #author-photo{
     display: inline-block;
-    /* background-color: white; */
-    /* position: -webkit-sticky;
-    position: sticky; */
-    background-image: url("../images/author.jp2");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url("../images/author.jpg") center center/contain no-repeat;
     min-width: 100%;
     height: 35em;
   }
@@ -422,38 +400,6 @@ li {
     list-style-image: url('../images/nastya.png');
 }
 
-#div2_background{
-  display: inline-block;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
-  width: 100%;
-  right: 0%;
-  bottom: 0%;
-  z-index: -1;
-  /* background-color: black; */
-}
-
-#div2_background > div {
-  top: 0px;
-  left: 0px;
-  width: auto;
-  height: auto;
-  right: 0px;
-  bottom: 0px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 80%;
-  background-image: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0)),
-  url("../images/iMac.png");
-}
-
-
   #summary-images {
     display: flex;
     justify-content: space-around;
@@ -463,23 +409,17 @@ li {
 
   #summary-images div:nth-child(1){
     display: inline-block;
-    background-repeat: no-repeat;
     width: 60%;
     height: 10em;
-    background-image: url("../images/tablet.jpg");
-    background-position: center center;
-    background-size: contain;
+    background: url("../images/tablet.jpg") center center/contain no-repeat;
   }
 
   #summary-images div:nth-child(2){
     display: inline-block;
-    background-repeat: no-repeat;
     width: 40%;
     height: 10em;
     margin-left: 5px;
-    background-image: url("../images/iPhone.jpg");
-    background-position: center center;
-    background-size: contain;
+    background-image: url("../images/iPhone.jpg") center center/contain no-repeat;
   }
 
 .collapsable-rows{
@@ -677,10 +617,7 @@ form > div {
 
 .package {
   display: inline-block;
-  background-repeat: no-repeat;
-  background-image: url("../images/package.jpg");
-  background-position: left center;
-  background-size: contain;
+  background-image: url("../images/package.jpg") left center/contain no-repeat;
   width: 50%;
 }
 
@@ -778,10 +715,8 @@ footer i {
 
 
   #div_background > div {
-    background-position: center right;
-    background-size: 50%;
     background-image: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0)),
-    url("../images/iMac-wide.png");
+    url("../images/iMac-wide.png") center right/50% no-repeat;
   }
 
   .top-nav img{
