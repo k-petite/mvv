@@ -623,7 +623,7 @@ form > div {
 
 .package {
   display: inline-block;
-  background: url("../images/package-transp.png") center center/70% no-repeat;
+  background: url("../images/package.jpg") left center/contain no-repeat;
   width: 50%;
 }
 
