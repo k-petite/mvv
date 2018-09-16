@@ -6,7 +6,6 @@
   box-sizing: border-box;
   /* border: 1px solid red; */
   text-align: center;
-  /* font-family: 'Montserrat', sans-serif; */
   font-family: 'Roboto', sans-serif;
   color: black;
 }
@@ -47,7 +46,6 @@ h2 {
 }
 
 h3 {
-  font-family: 'PT Serif', serif;
   font-family: 'Merriweather', serif;
   font-style: italic;
   line-height: 1.5em;
@@ -656,7 +654,7 @@ textarea::-webkit-input-placeholder{
   font-weight:300;
   padding-left:7px;
   opacity:.9;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 textarea{
@@ -676,7 +674,7 @@ button {
   border-style: none;
   color: white;
   font-size: 1.5em;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 /* =================================================
