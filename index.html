@@ -19,20 +19,20 @@
 <link rel="stylesheet" href="css/style.css">
 <body>
   <header>
-    <button class="collapsible-menu" id='top-menu'><img src='images/main_logo.png' alt="Logo of company" class="main-logo"></button>
+    <button class="collapsible-menu" id='top-menu' aria-label="Основное меню"><img src='images/main_logo.png' alt="Logo of company" class="main-logo"></button>
     <div class="collapsible-content-menu">
       <nav class="top-nav">
         <div class='nav-links'>
-          <a href="#content">Содержание Курса</a>
-          <a href="#author">Автор</a>
-          <a href="#about">О экзамене и визе MVV</a>
-          <a href="#review">Отзывы</a>
-          <a href="#price">Стоимость</a>
-          <a href="#contact">Контакты</a>
+          <a href="#content" aria-label="Содержание Курса">Содержание Курса</a>
+          <a href="#author" aria-label="Автор">Автор</a>
+          <a href="#about" aria-label="О экзамене и визе MVV">О экзамене и визе MVV</a>
+          <a href="#review" aria-label="Отзывы">Отзывы</a>
+          <a href="#price" aria-label="Стоимость">Стоимость</a>
+          <a href="#contact" aria-label="Контакты">Контакты</a>
         </div>
         <div class='language'>
-          <a href="#ru">RU</a>
-          <a href="#nl">NL</a>
+          <a href="#ru" aria-label="RU">RU</a>
+          <a href="#nl" aria-label="NL">NL</a>
         </div>
       </nav>
     </div> <!-- .content -->
@@ -59,10 +59,10 @@
       </div>
     </div>
     <div class='nav-links bottom-nav'>
-      <a href="#services">Посмотреть презентацию</a>
-      <a href="#services">Покупка и способы оплаты</a>
-      <a href="#services">Купить в рублях</a>
-      <a href="#contact">Купить в евро</a>
+      <a href="#services" aria-label="Посмотреть презентацию">Посмотреть презентацию</a>
+      <a href="#services" aria-label="Покупка и способы оплаты">Покупка и способы оплаты</a>
+      <a href="#services" aria-label="Купить в рублях">Купить в рублях</a>
+      <a href="#contact" aria-label="Купить в евро">Купить в евро</a>
     </div>
   </header>
   <main>
@@ -87,7 +87,7 @@
               (партнера, мужа, возлюбленного) являющегося резидентом Королевства Нидерланды.
               Этот резидент берет на себя финансовую ответственность за Вас, как приезжего иностранца не из стран Евросоюза.</p>
           </div>
-          <button class="collapsible-more" id='read-more'>Читать дальше...</button>
+          <button class="collapsible-more" id='read-more' aria-label="Читать дальше">Читать дальше...</button>
           <div class="content-more">
           <h5>Подготовка к экзамену <br> с курсом MVV на 100% проходит: </h5>
           <div>
@@ -192,7 +192,7 @@
       <h2>О экзамене и визе MVV</h2>
       <div class="collapsable-rows collapsible-rows-div1" onclick="cross(this)">
         <h3>Процедура подачи документов на визу MVV</h3>
-        <div class="crossbutton cf">
+        <div class="crossbutton cf" aria-label="Развернуть">
           <div class="bar1"></div>
           <div class="bar2"></div>
         </div>
@@ -218,7 +218,7 @@
       </p>
       <div class="collapsable-rows collapsible-rows-div2" onclick="cross(this)">
         <h3>Кто и откуда может запросить визу MVV </h3>
-        <div class="crossbutton cf">
+        <div class="crossbutton cf" aria-label="Развернуть">
           <div class="bar1"></div>
           <div class="bar2"></div>
         </div>
@@ -237,7 +237,7 @@
       </p>
       <div class="collapsable-rows collapsible-rows-div3" onclick="cross(this)">
       <h3>Leesvaardigheid «Навык чтения»</h3>
-        <div class="crossbutton cf">
+        <div class="crossbutton cf" aria-label="Развернуть">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <!-- <div class="bar3"></div> -->
@@ -277,7 +277,7 @@
       </p>
       <div class="collapsable-rows collapsible-rows-div4" onclick="cross(this)">
       <h3>Spreekvaardigheid «Навык говорения»</h3>
-        <div class="crossbutton cf">
+        <div class="crossbutton cf" aria-label="Развернуть">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <!-- <div class="bar3"></div> -->
@@ -307,7 +307,7 @@
       </p>
       <div class="collapsable-rows collapsible-rows-div5" onclick="cross(this)">
         <h3>KNS «100 вопросов о Голландии»</h3>
-        <div class="crossbutton cf">
+        <div class="crossbutton cf" aria-label="Развернуть">
           <div class="bar1"></div>
           <div class="bar2"></div>
         </div>
@@ -423,8 +423,8 @@
         <h2>MVV на 100%</h2>
         <h3 class="price">7950р</h3>
         <h3 class="price">Купить</h3>
-        <button id='rub'>  </button>
-        <button id='euro'>  </button>
+        <button id='rub' aria-label="Купить в рублях">  </button>
+        <button id='euro' aria-label="Купить в евро">  </button>
       </div> <!-- .black-circle section end -->
     </div> <!-- .payment .container section end -->
   <!-- </div>  -->
@@ -452,7 +452,7 @@
       <p>Центр изучения Нидерландского языка MijnNL
         <br>
         <br>
-        <a href="mailto:info@mijnnl.com" target="_top">info@mijnnl.com</a>
+        <a href="mailto:info@mijnnl.com" target="_top" aria-label="Написать на info@mijnnl.com">info@mijnnl.com</a>
         <br>
         Skype - kononova.nl
         <br>
