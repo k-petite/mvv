@@ -460,12 +460,43 @@
             <h3 class="price">7950р</h3>
             <h3 class="price">Купить</h3>
             <button id='rub' class="collapsible-rubble" aria-label="Купить в рублях">  </button>
-            <button id='euro' aria-label="Купить в евро">  </button>
+            <button id='euro' class="collapsible-euro" aria-label="Купить в евро">  </button>
           </div> <!-- .black-circle section end -->
         </div> <!-- .payment .container section end -->
         <!-- <div class='contacts'  id='contact'> -->
-        <div class='container content-rubble'>
+        <div class='content-rubble'>
           <h3>Оплатить в рублях</h3>
+          <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+            <input type="hidden" name="receiver" value="410017580007154">
+            <input type="hidden" name="formcomment" value="Проект «Железный человек»: реактор холодного ядерного синтеза">
+            <input type="hidden" name="short-dest" value="Проект «Железный человек»: реактор холодного ядерного синтеза">
+            <input type="hidden" name="label" value="$order_id">
+            <input type="hidden" name="quickpay-form" value="donate">
+            <input type="hidden" name="targets" value="транзакция {order_id}">
+            <input type="hidden" name="sum" value="4568.25" data-type="number">
+            <input type="hidden" name="comment" value="Хотелось бы получить дистанционное управление.">
+            <input type="hidden" name="need-fio" value="true">
+            <input type="hidden" name="need-email" value="true">
+            <input type="hidden" name="need-phone" value="false">
+            <input type="hidden" name="need-address" value="false">
+            <label><input type="radio" name="paymentType" value="PC">Яндекс.Деньгами</label>
+            <label><input type="radio" name="paymentType" value="AC">Банковской картой</label>
+            <input type="submit" value="Перевести">
+          </form>
+          <!-- <form>
+            <div>
+              <div>
+                <input placeholder="YOUR NAME*" required>
+                <input placeholder="YOUR E-MAIL*" required>
+                <input placeholder="SUBJECT">
+              </div>
+              <textarea placeholder="YOUR MESSAGE*" rows="15" required></textarea>
+            </div>
+            <button class="pay">Оплатить</button>
+          </form> -->
+        </div>
+        <div class='content-euro'>
+          <h3>Оплатить в евро</h3>
           <form>
             <div>
               <div>
@@ -475,7 +506,7 @@
               </div>
               <textarea placeholder="YOUR MESSAGE*" rows="15" required></textarea>
             </div>
-            <button>SEND MESSAGE</button>
+            <button class="pay">Запросить счет на оплату</button>
           </form>
         </div>
 </main>

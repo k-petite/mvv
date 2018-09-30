@@ -609,28 +609,70 @@ li {
   margin: 2em 0;
 }
 
-.payment button {
+#rub,
+#euro {
   margin: 1em;
   border-radius: 50px;
   background-color: #21468b;
   color: white;
-  width: 3em;
-  height: 3em;
+  width: 5em;
+  height: 5em;
 }
 
 #euro:before {
     content: ' \20AC   ';
+    font-size: 1.5em;
 }
 
 #rub:before {
     content: ' \0420';
+    font-size: 1.5em;
 }
+
+/*Collapsable rub button at the pay menu*/
+
+.collapsible-rubble,
+.collapsible-euro  {
+  cursor: pointer;
+}
+
+/* .collapsible-rubble:hover, */
+.active-rubble{
+  background-color: #555;
+}
+
+.content-rubble {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+} /*Colapsable rub button end*/
+
+
+/*Collapsable rub button at the pay menu*/
+
+
+.active-euro, .collapsible-euro:hover {
+  background-color: #555;
+}
+
+.content-euro {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+} /*Colapsable rub button end*/
+
 
 i{
   padding: 4px;
   border-radius: 50%;
   color: #222;
 }
+
+/*Paynment form*/
 
 .contacts {
   background: url("../images/map_image.png") repeat center, black;
@@ -703,16 +745,20 @@ textarea::-webkit-input-placeholder{
   padding-top: 5px;
 }
 
-button {
+.pay {
   height: 3em;
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
-  background-color: #fed036;
+  background-color: #18428e;
   border-style: none;
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
+  border-radius: 5px;
+  letter-spacing: 1.2px;
+  font-weight: 100;
   /* font-family: 'Montserrat', sans-serif; */
-}
+}/*Paynment form - end*/
+
 
 /* =================================================
                       FOOTER

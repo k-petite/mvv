@@ -123,7 +123,7 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active-rubble");
-    var content = this.nextElementSibling;
+    var content = document.getElementsByClassName("content-rubble")[0];
     if (content.style.maxHeight){
       content.style.maxHeight = null;
     } else {
@@ -132,6 +132,21 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+var coll = document.getElementsByClassName("collapsible-euro");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active-euro");
+    var content = document.getElementsByClassName("content-euro")[0];
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
 
   // When the user scrolls down 20px from the top of the document, slide down the navbar
   // window.onscroll = function() {scrollFunction()};
