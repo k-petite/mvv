@@ -681,6 +681,10 @@ i{
   padding-top: .5em;
 }
 
+.content-euro h3 {
+  padding: 2em;
+}
+
 form{
   display: flex;
   flex-direction: column;

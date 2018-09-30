@@ -459,14 +459,14 @@
             <h2>MVV на 100%</h2>
             <h3 class="price">7950р</h3>
             <h3 class="price">Купить</h3>
-            <button id='rub' class="collapsible-rubble" aria-label="Купить в рублях">  </button>
+            <a href="https://money.yandex.ru/to/410017580007154" target="_blank" rel="noopener" aria-label="Оплата в рублях"><button id='rub' class="collapsible-rubble" aria-label="Купить в рублях">  </button> </a>
             <button id='euro' class="collapsible-euro" aria-label="Купить в евро">  </button>
           </div> <!-- .black-circle section end -->
         </div> <!-- .payment .container section end -->
         <!-- <div class='contacts'  id='contact'> -->
         <div class='content-rubble'>
-          <h3>Оплатить в рублях</h3>
-          <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+          <!-- <h3>Оплатить в рублях</h3> -->
+          <!-- <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
             <input type="hidden" name="receiver" value="410017580007154">
             <input type="hidden" name="formcomment" value="Проект «Железный человек»: реактор холодного ядерного синтеза">
             <input type="hidden" name="short-dest" value="Проект «Железный человек»: реактор холодного ядерного синтеза">
@@ -482,7 +482,7 @@
             <label><input type="radio" name="paymentType" value="PC">Яндекс.Деньгами</label>
             <label><input type="radio" name="paymentType" value="AC">Банковской картой</label>
             <input type="submit" value="Перевести">
-          </form>
+          </form> -->
           <!-- <form>
             <div>
               <div>
@@ -496,18 +496,15 @@
           </form> -->
         </div>
         <div class='content-euro'>
-          <h3>Оплатить в евро</h3>
-          <form>
-            <div>
+          <h3>Запросить счет на оплату в евро</h3>
+            <form method="POST" action="https://formspree.io/katefanchic@mail.ru">
               <div>
-                <input placeholder="YOUR NAME*" required>
-                <input placeholder="YOUR E-MAIL*" required>
-                <input placeholder="SUBJECT">
+                <input type="text" name="name" placeholder="Имя и Фамилия*" required>
+                <input type="email" name="_replyto" placeholder="Электронная почта*" required>
+                <input  type="tel" name="tel" placeholder="Номер телефона">
               </div>
-              <textarea placeholder="YOUR MESSAGE*" rows="15" required></textarea>
-            </div>
-            <button class="pay">Запросить счет на оплату</button>
-          </form>
+              <button class="pay" type="submit">Отправить</button>
+            </form>
         </div>
 </main>
 <footer id="contact">
