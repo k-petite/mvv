@@ -112,19 +112,34 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-  function cross(x) {
-      x.classList.toggle("change");
-  }
+function cross(x) {
+  x.classList.toggle("change");
+}
 
+
+var coll = document.getElementsByClassName("collapsible-rubble");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active-rubble");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
 
 
   // When the user scrolls down 20px from the top of the document, slide down the navbar
-  window.onscroll = function() {scrollFunction()};
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("div_background").style.opacity = ".3";
-    } else {
-      document.getElementById("div_background").style.opacity = "1";
-    }
-  }
+  // window.onscroll = function() {scrollFunction()};
+  //
+  // function scrollFunction() {
+  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //     document.getElementById("div_background").style.opacity = ".3";
+  //   } else {
+  //     document.getElementById("div_background").style.opacity = "1";
+  //   }
+  // }

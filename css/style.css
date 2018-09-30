@@ -543,13 +543,38 @@ li {
 }
 
 .avatar{
-  background: url("../images/container-1.png") center center/contain no-repeat;
   width: 10em;
   height: 10em;
   border: 3px solid #f2f0f6;
   border-radius: 50%;
   margin: 0 auto;
 }
+
+#avatar-borodina{
+  background: url("../images/borodina.jpg") center center/cover no-repeat;
+}
+
+#avatar-maximenko{
+  background: url("../images/maximenko.jpg") center center/cover no-repeat;
+}
+
+#avatar-pryamushkina{
+  background: url("../images/pryamushkina.jpg") center center/cover no-repeat;
+}
+
+#avatar-skvortsova{
+  background: url("../images/skvortsova.jpg") center center/cover no-repeat;
+}
+
+#avatar-lik{
+  background: url("../images/lik.jpg") center center/cover no-repeat;
+}
+
+#avatar-pleshakova{
+  background: url("../images/pleshakova.jpg") center center/cover no-repeat;
+}
+
+
 
 .review i {
   color: #2278c5;
@@ -766,13 +791,46 @@ footer i {
     padding: 5px 10px;
   }
 
-  .welcome div *{
+
+  .welcome {
+    margin: 0;
+    display: flex;
+    /* justify-content: flex-start; */
+    /* width: 50%; */
+  }
+
+  #welcome-screen {
+    justify-content: flex-end;
+    margin: 0 2em;
+  }
+
+  #welcome-top,
+  #welcome-bottom {
+    background-image: none;
+  }
+
+  #welcome-top *{
+    text-align: left;
+    /* margin: 0; */
+  }
+
+  #welcome-top {
+    /* flex-grow:2; */
+    /* align-self: center; */
+  }
+
+  #welcome-bottom {
+  }
+
+
+
+  /* .welcome div *{
     margin: 1em auto;
   }
 
   .welcome > div{
     margin: 2em auto 2em;
-  }
+  } */
 
   .welcome a {
     font-size: 1.2em;
@@ -883,6 +941,15 @@ footer i {
   .about-list{
     padding-bottom: 0;
   }
+
+#review {
+  margin: 2em auto 0;
+}
+
+#review > div {
+  margin: 2em auto;
+}
+
 /*
 
 
